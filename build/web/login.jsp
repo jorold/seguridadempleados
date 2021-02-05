@@ -7,16 +7,22 @@ controllerlogin.setSession(session);
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/formgroup.css" rel="stylesheet" type="text/css"/>
         <title>JSP Page</title>
     </head>
     <body>
         <h1>Log In Empleados</h1>
+        <div class="form-group">
         <form method="post">
-            <label>Apellido: </label>
-            <input type="text" name="apellido" required placeholder="Apellido"/><br/>
-            <label>Id empleado: </label>
-            <input type="number" name="cajaid" required placeholder="Id empleado"/><br/>
-            <button type="submit">Log In</button>
+            <label for="pwd">Apellido: </label>
+            <input class="form-control" type="text" name="apellido" required placeholder="Apellido"/>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Id empleado: </label>
+            <input class="form-control" type="number" name="cajaid" required placeholder="Id empleado"/>
+        </div>
+        <button class="btn btn-outline-success" type="submit" style="margin-left: 660px">Log In</button>
         </form>
         <%
         String apellido = request.getParameter("apellido");

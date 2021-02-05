@@ -6,6 +6,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Acceso Denegado</h1>
+        <h1 style="color:red">Acceso Denegado</h1>
     </body>
 </html>
