@@ -27,4 +27,9 @@ public class ControllerLogin {
             return true;
         }
     }
+
+    public void cerrarSesion() {
+        session.setAttribute("EMPLEADO", null);
+        session.invalidate();
+    }
 }

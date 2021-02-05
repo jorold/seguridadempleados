@@ -12,7 +12,7 @@ controllerlogin.setSession(session);
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Log In Empleados</h1>
+        <h1 style="margin-left: 540px">Log In Empleados</h1>
         <div class="form-group">
         <form method="post">
             <label for="pwd">Apellido: </label>

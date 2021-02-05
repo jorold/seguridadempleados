@@ -64,7 +64,7 @@ controllerlogin.setSession(session);
       out.write("        <title>JSP Page</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        <h1>Log In Empleados</h1>\n");
+      out.write("        <h1 style=\"margin-left: 540px\">Log In Empleados</h1>\n");
       out.write("        <div class=\"form-group\">\n");
       out.write("        <form method=\"post\">\n");
       out.write("            <label for=\"pwd\">Apellido: </label>\n");
@@ -75,7 +75,7 @@ controllerlogin.setSession(session);
       out.write("            <input class=\"form-control\" type=\"number\" name=\"cajaid\" required placeholder=\"Id empleado\"/>\n");
       out.write("        </div>\n");
       out.write("        <button class=\"btn btn-outline-success\" type=\"submit\" style=\"margin-left: 660px\">Log In</button>\n");
-      out.write("        <img style=\"margin-left: 590px\" src=\"images/vigilando.jpg\" alt=\"\"/>\n");
+      out.write("        <img style=\"margin-left: 570px\" src=\"images/vigilando.jpg\" alt=\"\"/>\n");
       out.write("        </form>\n");
       out.write("        ");
 
