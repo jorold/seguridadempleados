@@ -46,10 +46,12 @@ public final class accesodenegado_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <link href=\"css/bootstrap.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
       out.write("        <title>JSP Page</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        <h1 style=\"color:red\">Acceso Denegado</h1>\n");
+      out.write("        <h1 style=\"color:red;margin-left: 500px\">Acceso Denegado</h1>\n");
+      out.write("        <img src=\"images/stop.jpg\" alt=\"\" style=\"width: 300px;height: 250px;margin-left: 500px\"/>\n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {

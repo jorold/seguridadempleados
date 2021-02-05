@@ -1,3 +1,4 @@
+<%@page import="models.Empleado"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -7,7 +8,13 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <%
+        Empleado emp = (Empleado)session.getAttribute("EMPLEADO");
+        %>
         <h1>Bienvenido usuario</h1>
+        <h2 style="color: blueviolet">
+            Perfil: <%=emp.getApellido()%>, <%=emp.getOficio()%>
+        </h2>
         <ul class="list-group list-group-horizontal">
             <li class="list-group-item"><a class="btn btn-outline-primary" href="../index.html">Home</a></li>            
             <li class="list-group-item"><a class="btn btn-outline-primary" href="usuarioempleado.jsp">Zona empleado</a></li>

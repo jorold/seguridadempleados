@@ -75,6 +75,7 @@ controllerlogin.setSession(session);
       out.write("            <input class=\"form-control\" type=\"number\" name=\"cajaid\" required placeholder=\"Id empleado\"/>\n");
       out.write("        </div>\n");
       out.write("        <button class=\"btn btn-outline-success\" type=\"submit\" style=\"margin-left: 660px\">Log In</button>\n");
+      out.write("        <img style=\"margin-left: 590px\" src=\"images/vigilando.jpg\" alt=\"\"/>\n");
       out.write("        </form>\n");
       out.write("        ");
 
@@ -84,7 +85,7 @@ controllerlogin.setSession(session);
             int idempleado = Integer.parseInt(dato);
             boolean acceso = controllerlogin.existeEmpleado(apellido, idempleado);
             if(acceso == true){
-                response.sendRedirect("protegida/usuarioempleado.jsp");
+                response.sendRedirect("proteccion/usuarioempleado.jsp");
             }else{
                 
       out.write("\n");

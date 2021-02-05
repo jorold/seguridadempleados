@@ -30,7 +30,13 @@ public class FiltroEmpleados implements Filter {
             //necesitamos validad es zona protegida
             //si el empleado existe puede navegar
             if (empleado != null) {
-                chain.doFilter(request, response);
+                if (empleado.getOficio().equalsIgnoreCase("presidente")
+                        || empleado.getOficio().equalsIgnoreCase("director")) {
+                    chain.doFilter(request, response);
+                } else {
+                    HttpServletResponse respuesta = (HttpServletResponse) response;
+                    respuesta.sendRedirect("../accesodenegado.jsp");
+                }
             } else {
                 //no se ha validado todavía
                 HttpServletResponse respuesta = (HttpServletResponse) response;

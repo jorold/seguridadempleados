@@ -23,6 +23,7 @@ controllerlogin.setSession(session);
             <input class="form-control" type="number" name="cajaid" required placeholder="Id empleado"/>
         </div>
         <button class="btn btn-outline-success" type="submit" style="margin-left: 660px">Log In</button>
+        <img style="margin-left: 570px" src="images/vigilando.jpg" alt=""/>
         </form>
         <%
         String apellido = request.getParameter("apellido");
